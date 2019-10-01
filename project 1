@@ -1,0 +1,25 @@
+
+def maths(sequence):
+      ''' creates the list result'''
+      result = []
+      '''
+      each number in the list is multiplied by 3
+      then if it is even it is devided by 2
+      if it is odd it is multipled by 11,
+      finally it adds it to the result list
+      '''
+      for element in sequence:
+            element *= 3
+            if element % 2 == 0:
+                  result = result + [element / 2]
+            else:
+                  result = result + [element * 11]
+      ''' returns the result'''
+      return result
+
+""" calls the functions and prints to the terminal"""
+print(maths([1,2,3]))
+x = [23,45,7,2,787,242,68]
+print(maths(x))
+y = (maths([17,32,13]))
+print(y)
